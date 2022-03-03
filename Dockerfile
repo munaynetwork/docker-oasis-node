@@ -1,12 +1,10 @@
 FROM debian:bullseye-slim
 
-# build args
-ARG VERSION=21.3.9
-
 # env
 ENV DEBIAN_FRONTEND=noninteractive \
     WGET_OPTIONS="--progress=bar:force:noscroll" \
-    DOWNLOAD_ROOT_URL=https://github.com/oasisprotocol/oasis-core/releases/download
+    DOWNLOAD_ROOT_URL=https://github.com/oasisprotocol/oasis-core/releases/download \
+    VERSION=21.3.9
 
 RUN \
     \
