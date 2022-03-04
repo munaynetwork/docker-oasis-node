@@ -4,7 +4,7 @@ FROM debian:bullseye-slim
 ENV DEBIAN_FRONTEND=noninteractive \
     WGET_OPTIONS="--progress=bar:force:noscroll" \
     DOWNLOAD_ROOT_URL=https://github.com/oasisprotocol/oasis-core/releases/download \
-    VERSION=21.3.9
+    VERSION=21.3.10
 
 RUN \
     \
